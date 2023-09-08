@@ -3,7 +3,7 @@ using UnityEngine;
 public class BackwardsState : HeroineState
 {
     private bool _isMoving = true;
-    private float _reverseSpeed = 200f;
+    private float _reverseSpeed = 300f;
     private Rigidbody _rb;
 
     public override void Enter(Heroine heroine)

@@ -3,7 +3,7 @@ using UnityEngine;
 public class ForwardState : HeroineState
 {
     private bool _isMoving = true;
-    private float _forwardSpeed = 300f;
+    private float _forwardSpeed = 500f;
     private Rigidbody _rb;
 
     public override void Enter(Heroine heroine)

@@ -16,6 +16,11 @@ public class DoubleJumpState : HeroineState
         Rigidbody rb = heroine.GetComponent<Rigidbody>();
         if (rb != null)
             rb.AddForce(_jumpForce * Vector3.up, ForceMode.Force);
+        GUIManager.instance.ShowObject(KeyCode.LeftShift, true);
+    }
+    public override void Exit(Heroine heroine)
+    {
+        GUIManager.instance.ShowObject(KeyCode.LeftShift, false);
     }
     public override HeroineState HandleInput(Heroine heroine)
     {

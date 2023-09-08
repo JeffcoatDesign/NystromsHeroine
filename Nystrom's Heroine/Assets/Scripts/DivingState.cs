@@ -22,6 +22,6 @@ public class DivingState : HeroineState
 
     public override void Update(Heroine heroine)
     {
-        _isGrounded = Physics.Raycast(heroine.transform.position, -Vector3.up, 0.5f * heroine.transform.localScale.y);
+        _isGrounded = Physics.Raycast(heroine.transform.position, -Vector3.up, 0.6f * heroine.transform.localScale.y);
     }
 }

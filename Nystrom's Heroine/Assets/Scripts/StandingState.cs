@@ -7,6 +7,15 @@ public class StandingState : HeroineState {
         MeshRenderer mr = heroine.GetComponent<MeshRenderer>();
         if (mr != null)
             mr.material.color = Color.white;
+        GUIManager.instance.ShowObject(KeyCode.LeftShift, true);
+        GUIManager.instance.ShowObject(KeyCode.Space, true);
+        GUIManager.instance.ShowObject(KeyCode.E, true);
+    }
+    public override void Exit(Heroine heroine)
+    {
+        GUIManager.instance.ShowObject(KeyCode.LeftShift, false);
+        GUIManager.instance.ShowObject(KeyCode.Space, false);
+        GUIManager.instance.ShowObject(KeyCode.E, false);
     }
     public override HeroineState HandleInput(Heroine heroine)
     {

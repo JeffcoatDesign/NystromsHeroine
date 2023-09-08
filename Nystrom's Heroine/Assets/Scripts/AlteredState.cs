@@ -9,6 +9,15 @@ public class AlteredState : HeroineState
         MeshRenderer mr = heroine.GetComponent<MeshRenderer>();
         if (mr != null)
             mr.material.color = Color.yellow;
+        GUIManager.instance.ShowObject(KeyCode.W, true);
+        GUIManager.instance.ShowObject(KeyCode.E, true);
+        GUIManager.instance.ShowObject(KeyCode.S, true);
+    }
+    public override void Exit(Heroine heroine)
+    {
+        GUIManager.instance.ShowObject(KeyCode.W, false);
+        GUIManager.instance.ShowObject(KeyCode.E, false);
+        GUIManager.instance.ShowObject(KeyCode.S, false);
     }
     public override HeroineState HandleInput(Heroine heroine)
     {
