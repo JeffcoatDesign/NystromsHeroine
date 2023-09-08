@@ -3,4 +3,4 @@
 # Play
 https://jeffcoatdesign.github.io/NystromsHeroine/
 # Additions
-Double Jump State, movement State, forwards State, backwards State, cinemachine cammera, and controls UI
+Double Jump State, movement State, forwards State, backwards State, cinemachine camera, and controls UI
